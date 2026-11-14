@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#f4b860" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Jenni" />
+    <title>Jenni's Book</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icons/icon-192.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" sizes="180x180" />
+    <style>
+      html:not([data-theme]) body { background: #2b4f7a; }
+      html:not([data-theme]) #app { visibility: hidden; }
+    </style>
+    <script>
+      setTimeout(function () {
+        if (!document.documentElement.dataset.theme) document.documentElement.dataset.theme = 'timeout';
+      }, 2500);
+    </script>
+    <script type="module" crossorigin src="./assets/index-B0sqxkUt.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-OVN4kbsw.css">
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="floor"></canvas>
+      <div id="ui"></div>
+    </div>
+  </body>
+</html>
