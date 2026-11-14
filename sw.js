@@ -1,11 +1,11 @@
-/* Jenni's Book service worker. Build 3dfca13ec263db84.
+/* Jenni's Book service worker. Build 47277fffa685197e.
    Generated. Do not edit by hand.
    HTML is network-first and is not written back into the cache, so an
    online reload cannot mix a new shell with this build's hashed files.
    Hashed assets are cache-first. An update does not call skipWaiting
    until the page asks (first install, or the title screen). */
-const CACHE = "jenni-book-3dfca13ec263db84";
-const PRECACHE = ["./","./assets/fredoka-latin-600-normal-C4zohCW5.woff2","./assets/fredoka-latin-600-normal-CcrEjrB4.woff","./assets/fredoka-latin-700-normal-BOIZVyIN.woff2","./assets/fredoka-latin-700-normal-C8FeHd3X.woff","./assets/index-BBcsMZRM.js","./assets/index-OVN4kbsw.css","./assets/nunito-latin-700-normal-Dort48En.woff2","./assets/nunito-latin-700-normal-OcDqTBcA.woff","./assets/nunito-latin-800-normal-D-J0wlBY.woff","./assets/nunito-latin-800-normal-Dz8SOQK_.woff2","./assets/nunito-latin-900-normal-BVB1fGs6.woff2","./assets/nunito-latin-900-normal-CVn49sIn.woff","./assets/premium-DDkjsTTt.css","./assets/styles-Bt0LvRGO.css","./icons/apple-touch-icon.png","./icons/icon-192.png","./icons/icon-512-maskable.png","./icons/icon-512.png","./index.html","./manifest.webmanifest"];
+const CACHE = "jenni-book-47277fffa685197e";
+const PRECACHE = ["./","./assets/fredoka-latin-600-normal-C4zohCW5.woff2","./assets/fredoka-latin-600-normal-CcrEjrB4.woff","./assets/fredoka-latin-700-normal-BOIZVyIN.woff2","./assets/fredoka-latin-700-normal-C8FeHd3X.woff","./assets/index-CFXc7LDV.js","./assets/index-OVN4kbsw.css","./assets/nunito-latin-700-normal-Dort48En.woff2","./assets/nunito-latin-700-normal-OcDqTBcA.woff","./assets/nunito-latin-800-normal-D-J0wlBY.woff","./assets/nunito-latin-800-normal-Dz8SOQK_.woff2","./assets/nunito-latin-900-normal-BVB1fGs6.woff2","./assets/nunito-latin-900-normal-CVn49sIn.woff","./assets/premium-DDkjsTTt.css","./assets/styles-Bt0LvRGO.css","./icons/apple-touch-icon.png","./icons/icon-192.png","./icons/icon-512-maskable.png","./icons/icon-512.png","./index.html","./manifest.webmanifest"];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(PRECACHE)));
